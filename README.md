@@ -57,7 +57,7 @@ npm run dev
 >HelloReact组件只用做demo演示，实际开发时需要通过删除HelloReact目录删除该demo组件。
 
 >有时运行该命令时会报如下错误：`Error: listen EADDRINUSE 127.0.0.1:8888`，遇到这种情况需要按照下面方法修改端口：
->修改`package.jso`文件内`scripts`字段的`dev`命令，找到`--port`，将其后面的`888`8改为其他端口，如`3000`
+>修改`package.jso`文件内`scripts`字段的`dev`命令，找到`--port`，将其后面的`8888`改为其他端口，如`3000`
 
 ### 7. 编译打包
 ```
