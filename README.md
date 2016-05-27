@@ -28,22 +28,22 @@ yo react-web-app
 ├───webpack.prod.config.js        //用于生产环境的webpack配置文件
 ├───.gitignore                    //上传到github或gitlab时忽略不必要的文件
 ├───src/                          //源码的根目录
-│   └───fonts                     //放置自定义字体
-│   └───images                    //放置图片资源
-│   └───javascripts               //存放脚本的根目录
-│     └───actions                 //放置redux的actions，该目录只在选择了redux选项时存在
-│     └───components              //放置组件
-│     └───constants               //放置常量
-│     └───containers              //放置容器组件，对于简单的项目，一般用于放置根组件
-│     └───libs                    //放置第三方库
-│     └───reducers                //放置redux的reducers，该目录只在选择了redux选项时存在
-│     └───utils                   //放置项目中的公共代码
+│   └───fonts/                    //放置自定义字体
+│   └───images/                   //放置图片资源
+│   └───javascripts/              //存放脚本的根目录
+│     └───actions/                //放置redux的actions，该目录只在选择了redux选项时存在
+│     └───components/             //放置组件
+│     └───constants/              //放置常量
+│     └───containers/             //放置容器组件，对于简单的项目，一般用于放置根组件
+│     └───libs/                   //放置第三方库
+│     └───reducers/               //放置redux的reducers，该目录只在选择了redux选项时存在
+│     └───utils/                  //放置项目中的公共代码
 │     └───main.js                 //入口脚本文件，对于简单的项目，一般用于绘制根组件
-│   └───stylesheets               //放置样式文件
+│   └───stylesheets/              //放置样式文件
 ```
 
 ### 4. 安装依赖
-进入到项目根目录，执行：
+在项目根目录下执行：
 ```
 npm install
 ```
@@ -64,7 +64,7 @@ npm run buld
 编译后会生成dst目录，测试或发布时使用该目录即可。
 
 ### 7. 创建组件
-在项目根路径下执行
+在项目根目录下执行：
 ```
 yo react-web-app:react-component
 ```
