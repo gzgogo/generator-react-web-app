@@ -16,7 +16,7 @@ module.exports = generators.Base.extend({
     this.cssPreProcessor = "none";
     this.needES6 = false;
     this.needRedux = false;
-    
+
     utils.debug(this, "app:initializing");
   },
 
@@ -25,7 +25,7 @@ module.exports = generators.Base.extend({
 
     // Have Yeoman greet the user.
     this.log(yosay(
-      'Welcome to the amazing ' + chalk.red('generator-react-webapp') + ' generator!'
+      'Welcome to the amazing ' + chalk.red('generator-react-web-app') + ' generator!'
     ));
 
     var done = this.async();
