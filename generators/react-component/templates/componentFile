@@ -2,7 +2,7 @@
 import './<%= componentName %>.<%= stylesheetExtension %>';
 import React from 'react';
 
-class <%= componentName %> extends Component {
+class <%= componentName %> extends React.Component {
   render() {
     return (
       <div className="<%= componentName.toLowerCase() %>">
