@@ -13,7 +13,7 @@ npm install -g yo
 npm install -g generator-react-web-app
 ```
 
->使用-g进行全局安装，在以后每次新建项目时不需再次安装，可直接创建项目
+>使用-g进行全局安装，在以后每次新建项目时不需再次安装，可直接创建项目。
 
 ### 3. 创建项目
 ```
@@ -52,10 +52,12 @@ npm install
 ```
 npm run dev
 ```
-在浏览器上打开地址`localhost:8888`（端口可能会被修改），即可进入开发阶段，修改文件并保存后页面会实时刷新。
+在浏览器上打开地址`localhost:8888`（端口可以修改），即可在页面上看到Hello React字样，同时进入开发阶段，修改文件并保存后页面会实时刷新。
 
->有时运行该命令时会报如下错误：`Error: listen EADDRINUSE 127.0.0.1:8888`，遇到这种情况需要按照下面方法修改端口：
->修改`package.jso`文件内`scripts`字段的`dev`命令，找到`--port`，将其后面的`888`8改为其他端口，如`3000`
+>1. HelloReact组件只用做demo演示，实际开发时需要通过删除HelloReact目录删除该demo组件。
+
+>2. 有时运行该命令时会报如下错误：`Error: listen EADDRINUSE 127.0.0.1:8888`，遇到这种情况需要按照下面方法修改端口：
+>修改`package.jso`文件内`scripts`字段的`dev`命令，找到`--port`，将其后面的`8888`改为其他端口，如`3000`。
 
 ### 7. 编译打包
 ```
@@ -68,4 +70,4 @@ npm run buld
 ```
 yo react-web-app:react-component
 ```
-
+该命令会根据向导在`src/javascripts/components/`目录下创建相应组件。
