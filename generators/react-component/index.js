@@ -64,7 +64,7 @@ module.exports = yeoman.Base.extend({
     utils.debug(this, stylesheetFullPath);
 
     this.fs.copyTpl(
-      this.templatePath('componentFile'),
+      this.templatePath('component.js'),
       this.destinationPath(jsFullPath),
       {
         componentName: componentName,
@@ -73,9 +73,12 @@ module.exports = yeoman.Base.extend({
     );
 
     if (!!this.props.stylesheetExtension) {
-      this.fs.copy(
-        this.templatePath('stylesheetFile'),
-        this.destinationPath(stylesheetFullPath)
+      this.fs.copyTpl(
+        this.templatePath('component.stylesheet'),
+        this.destinationPath(stylesheetFullPath),
+        {
+          componentName: componentName
+        }
       );
     }
   }

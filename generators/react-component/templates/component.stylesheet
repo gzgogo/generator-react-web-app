@@ -1,0 +1,3 @@
+.<%= componentName.toLowerCase() %> {
+  margin: 0 auto;
+}
