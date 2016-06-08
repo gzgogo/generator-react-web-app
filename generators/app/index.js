@@ -106,6 +106,8 @@ module.exports = generators.Base.extend({
     utils.debug(this, "app:templatePath " + this.templatePath('webpack.dev.config.js'));
     utils.debug(this, "app:destinationPath " + this.destinationPath('webpack.dev.config.js'));
 
+    mkdirp.sync('web_modules');
+
     this.fs.copy(
       this.templatePath('gitignore'),
       this.destinationPath('.gitignore')
