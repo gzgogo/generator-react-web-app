@@ -127,6 +127,14 @@ module.exports = generators.Base.extend({
       }
     );
 
+    this.fs.copyTpl(
+      this.templatePath('webpack.watch.config.js'),
+      this.destinationPath('webpack.watch.config.js'),
+      {
+        projectName: this.projectName
+      }
+    );
+
     this._copyPackageJson();
   },
 
