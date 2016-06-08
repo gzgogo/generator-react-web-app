@@ -21,7 +21,7 @@ const AppPaths = {
 };
 
 var AppPages = [
-  { title: '<%= projectName %>', entry: 'main', template: path.resolve(AppPaths.src, 'index.html') , fileName: 'index.html' }
+  { title: '<%= projectName %>', entry: ['main'], template: path.resolve(AppPaths.src, 'index.html') , fileName: 'index.html' }
 ];
 
 // var node_modules_dir = path.join(__dirname, 'node_modules');
@@ -114,7 +114,8 @@ function HtmlWebpackPluginPages(pages) {
     return new HtmlWebpackPlugin({
       title: page.title,
       filename: page.fileName,
-      chunks: [page.entry],
+      chunks: page.entry,
+      chunksSortMode: 'none',
       // favicon: path.resolve(__dirname, 'src/img/favicon.ico'),
       template: page.template
     })
