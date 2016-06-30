@@ -5,6 +5,7 @@ var yosay = require('yosay');
 var extend = require('deep-extend');
 var path = require('path');
 var utils = require('../utils.js');
+var mkdirp = require('mkdirp');
 
 module.exports = generators.Base.extend({
 
