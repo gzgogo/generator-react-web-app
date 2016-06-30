@@ -62,6 +62,49 @@ var config = {
           name: path.normalize('./images/[name].[ext]?[hash]')
         }
       },
+      {
+        test: /\.woff(#\w*)*$/,
+        loader: 'url',
+        query: {
+          limit: 10000,
+          name: path.normalize('./fonts/[name].[ext]'),
+          minetype: 'application/font-woff'
+        }
+      },
+      {
+        test: /\.woff2(#\w*)*$/,
+        loader: 'url',
+        query: {
+          limit: 10,
+          name: path.normalize('./fonts/[name].[ext]'),
+          minetype: 'application/font-woff'
+        }
+      },
+      {
+        test: /\.ttf(#\w*)*$/,
+        loader: 'url',
+        query: {
+          limit: 10,
+          name: path.normalize('./fonts/[name].[ext]'),
+          minetype: 'application/octet-stream'
+        }
+      },
+      {
+        test: /\.eot(#\w*)*$/,
+        loader: 'file',
+        query: {
+          name: path.normalize('./fonts/[name].[ext]'),
+        }
+      },
+      {
+        test: /\.svg(#\w*)*$/,
+        loader: 'url',
+        query: {
+          limit: 10,
+          name: path.normalize('./fonts/[name].[ext]'),
+          minetype: 'image/svg+xml'
+        }
+      }
     ]
   },
   plugins: [
