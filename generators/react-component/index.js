@@ -33,22 +33,24 @@ module.exports = yeoman.Base.extend({
         store: true,
         default: ''
       },
-      {
-        type: 'list',
-        name: 'stylesheetExtension',
-        message: 'Choose the css pre-processor you need:',
-        choices: [
-          { name: 'css', value: 'css' },
-          { name: 'less', value: 'less' },
-          { name: 'sass', value: 'sass' },
-          { name: 'stylus', value: 'styl' }
-        ],
-        store: true,
-        default: 'css'
-      }];
+      // {
+      //   type: 'list',
+      //   name: 'stylesheetExtension',
+      //   message: 'Choose the css pre-processor you need:',
+      //   choices: [
+      //     { name: 'css', value: 'css' },
+      //     { name: 'less', value: 'less' },
+      //     { name: 'sass', value: 'sass' },
+      //     { name: 'stylus', value: 'styl' }
+      //   ],
+      //   store: true,
+      //   default: 'css'
+      // }
+    ];
 
     this.prompt(prompts, function (props) {
       this.props = props;
+      this.props.stylesheetExtension = 'styl';
       done();
     }.bind(this));
   },
