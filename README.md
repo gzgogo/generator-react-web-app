@@ -1,3 +1,4 @@
+>为了使用方便，此项目已转移到[generator-ra](https://github.com/gzgogo/generator-ra)，请改用并关注`generator-ra`。
 
 # generator-react-web-app
 the scaffold of the react web app
